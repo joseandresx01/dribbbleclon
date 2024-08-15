@@ -1,0 +1,1015 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contenedor1 {
+    background-color: rgb(248, 247, 244);
+}
+
+/* seccion1 */
+/* carrusel1 */
+.imgcarr {
+    width: 300px;
+    height: 100%;
+    background-color: bisque;
+    display: inline-block;
+    border-radius: 20px;
+    margin-left: 25px;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-700%);
+    }
+}
+
+.carrusel .center .centerp1::-webkit-scrollbar {
+    display: none;
+}
+
+.center img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.center video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* seccion2 */
+
+
+/* seccion3 */
+.seccion3 {
+    background-color: rgb(255, 218, 121);
+}
+
+/* carrusel2 */
+.imgcarr2 {
+    width: 200px;
+    height: 50%;
+    background-color: bisque;
+    display: inline-block;
+    border-radius: 20px;
+    margin-left: 25px;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-145%);
+    }
+}
+
+.carrusel2 .center2 .centerp2::-webkit-scrollbar {
+    display: none;
+}
+
+.center2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.center2 video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+/*Media Query*/
+@media(max-width:480px) {
+
+    /* Dribbble */
+    .navbar {
+        gap: 0%;
+    }
+
+    .burguer {
+        display: block;
+    }
+
+    .categorias1 {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 0%;
+    }
+
+    .buscador {
+        gap: 30px;
+    }
+
+    .lupa {
+        display: block;
+        width: 20px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .loginbutton {
+        display: none;
+    }
+
+    .signin {
+        white-space: nowrap;
+    }
+
+    .world {
+        font-size: 30px;
+    }
+
+    .design {
+        font-size: 30px;
+    }
+
+    .inspired {
+        display: none;
+    }
+
+    .inspiredmedia {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .explore {
+        font-size: 30px;
+    }
+
+    .seccionesimg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccionesimg2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccionesimg3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccionesimg4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccionesimg5 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccionesimg6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccionesimg7 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .find {
+        font-size: 40px;
+    }
+
+    .leading {
+        font-size: 12px;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infof {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .extra {
+        gap: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .last {
+        gap: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .terms {
+        display: flex;
+        gap: 13px;
+        padding-bottom: 20px;
+    }
+
+    .personal {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Login */
+
+    .google {
+        font-size: 17px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .or {
+        display: none;
+    }
+
+    .ormedia {
+        display: block;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .imail {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 120px;
+    }
+
+    .piasword {
+        gap: 190px;
+    }
+
+    .paswor {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 120px;
+        ;
+    }
+
+    .saign {
+        font-size: 17px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+
+
+    /* Signin */
+
+    .nombres {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .create {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 90px;
+        padding-right: 85px;
+    }
+
+    .by {
+        white-space: nowrap;
+        font-size: 11px;
+    }
+
+    /* Principal */
+
+    .categorias {
+        display: none;
+    }
+
+    .share {
+        display: none;
+    }
+
+    .sharemedia {
+        display: block;
+    }
+
+    .buscar {
+        display: block;
+        width: 20px;
+    }
+
+    .contenido-categorias {
+        margin-top: 0%;
+        white-space: nowrap;
+    }
+
+    .hr {
+        display: block;
+    }
+
+    .categoriasmedia {
+        display: block;
+    }
+
+    .discover {
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .category {
+        width: fit-content;
+    }
+
+    .info {
+        width: 330px;
+    }
+
+    .animation {
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .branding {
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .illustration {
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .mobile {
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .print {
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .productdesign {
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .typography {
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .webdesign {
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    /* Share */
+
+    .navbar {
+        gap: 0%;
+    }
+
+    .subir {
+        gap: 10px;
+
+    }
+
+    .darinfo{
+        width: 320px;
+    }
+
+    .what {
+        font-size: 17px;
+    }
+
+    .imagend {
+        display: none;
+    }
+
+    .drag {
+        font-size: 16px;
+    }
+
+    .minimum {
+        display: none;
+    }
+
+    .minimummedia {
+        display: block;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .requer {
+        padding-top: 20px;
+    }
+
+    .requeriments1 {
+        display: flex;
+        flex-direction: column;
+        gap: 0%;
+        font-size: 14px;
+    }
+
+
+    .requeriments2 {
+        display: flex;
+        flex-direction: column;
+        gap: 0%;
+        font-size: 14px;
+    }
+
+    .imgload {
+        width: 280px;
+        height: 200px;
+    }
+
+    .videoload {
+        width: 280px;
+        height: 200px;
+    }
+
+    .foto {
+        width: 310px;
+        height: 350px;
+        padding: 0%;
+    }
+
+    .usuario {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .limitedmedia {
+        display: block;
+    }
+
+    .edit {
+        gap: 140px;
+    }
+
+    .limited {
+        display: none;
+    }
+
+    .mas {
+        gap: 0%;
+    }
+
+    .work {
+        padding: 5px;
+        gap: 13px;
+        font-size: 12px;
+    }
+
+
+    .recent {
+        display: none;
+    }
+
+    .recentmedia {
+        display: block;
+        display: flex;
+    }
+
+
+
+
+    .you {
+        display: none;
+    }
+
+    .load {
+        padding-bottom: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+@media(min-width:481px) and (max-width: 767px) {
+
+    /* Dribbble */
+
+    .navbar {
+        gap: 0%;
+    }
+
+    .burguer {
+        display: block;
+    }
+
+    .categorias1 {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 0%;
+    }
+
+    .buscador {
+        gap: 30px;
+    }
+
+    .lupa {
+        display: block;
+        width: 20px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .loginbutton {
+        display: none;
+    }
+
+    .signin {
+        white-space: nowrap;
+    }
+
+    .world {
+        font-size: 35px;
+    }
+
+    .design {
+        font-size: 35px;
+    }
+
+    .inspired {
+        display: none;
+    }
+
+    .inspiredmedia {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .explore {
+        font-size: 35px;
+    }
+
+    .imgw{
+        width: 430px;
+        height: 300px;
+    }
+
+    .infousuarios{
+        width: 430px;
+        gap: 60px;
+        white-space: nowrap;
+    }
+
+    .seccionesimg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccionesimg2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccionesimg3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccionesimg4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccionesimg5 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccionesimg6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccionesimg7 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .find {
+        font-size: 40px;
+    }
+
+    .leading {
+        font-size: 16px;
+    }
+
+    .infof {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .extra {
+        gap: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .last {
+        gap: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .terms {
+        display: flex;
+        gap: 13px;
+        padding-bottom: 20px;
+    }
+
+
+    .personal {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Login */
+
+    .google {
+        font-size: 17px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+
+    .or {
+        display: none;
+    }
+
+
+    .ormedia {
+        display: block;
+        display: flex;
+        align-items: center;
+        gap: 45px;
+    }
+
+
+    .imail {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 170px;
+    }
+
+
+    .piasword {
+        gap: 240px;
+    }
+
+
+    .paswor {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 170px;
+        
+    }
+
+
+    .saign {
+        font-size: 17px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+
+    /* Signin */
+
+    .nombres {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .create {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+
+
+    .by {
+        white-space: nowrap;
+        font-size: 13px;
+    }
+
+    /* Principal */
+
+    .categorias {
+        display: none;
+    }
+
+
+    .share {
+        display: none;
+    }
+
+
+    .sharemedia {
+        display: block;
+    }
+
+    .follow{
+        gap: 240px;
+    }
+
+    .buscar {
+        display: block;
+        width: 20px;
+    }
+
+
+    .contenido-categorias {
+        margin-top: 0%;
+        white-space: nowrap;
+    }
+
+
+    .hr {
+        display: block;
+    }
+
+
+    .categoriasmedia {
+        display: block;
+    }
+
+
+    .discover {
+        margin-top: 5px;
+        margin-left: 26px;
+    }
+
+
+    .category {
+        width: fit-content;
+    }
+
+
+    .info {
+        width: 430px;
+    }
+
+
+    .animation {
+        margin-top: 5px;
+        margin-left: 26px;
+    }
+
+
+    .branding {
+        margin-top: 5px;
+        margin-left: 26px;
+    }
+
+
+    .illustration {
+        margin-top: 5px;
+        margin-left: 26px;
+    }
+
+
+    .mobile {
+        margin-top: 5px;
+        margin-left: 26px;
+    }
+
+
+    .print {
+        margin-top: 5px;
+        margin-left: 26px;
+    }
+
+
+    .productdesign {
+        margin-top: 5px;
+        margin-left: 26px;
+    }
+
+
+    .typography {
+        margin-top: 5px;
+        margin-left: 26px;
+    }
+
+
+    .webdesign {
+        margin-top: 5px;
+        margin-left: 26px;
+    }
+
+    /* Share */
+
+    .navbar {
+        gap: 0%;
+    }
+
+
+    .subir {
+        gap: 100px;
+
+    }
+
+    .darinfo{
+        width: 420px;
+    }
+
+    .what {
+        font-size: 22px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .imagend {
+        display: none;
+    }
+
+
+    .drag {
+        font-size: 16px;
+    }
+
+
+    .minimum {
+        display: none;
+    }
+
+
+    .minimummedia {
+        display: block;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    .requer {
+        padding-top: 20px;
+    }
+
+
+    .requeriments1 {
+        display: flex;
+        flex-direction: column;
+        gap: 0%;
+        font-size: 14px;
+    }
+
+
+    .requeriments2 {
+        display: flex;
+        flex-direction: column;
+        gap: 0%;
+        font-size: 14px;
+    }
+
+
+    .imgload {
+        width: 380px;
+        height: 250px;
+    }
+
+
+    .videoload {
+        width: 380px;
+        height: 250px;
+    }
+
+
+    .foto {
+        width: 430px;
+        height: 350px;
+        padding: 0%;
+    }
+
+
+    .usuario {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+
+    .limitedmedia {
+        display: block;
+    }
+
+
+    .edit {
+        gap: 255px;
+    }
+
+
+    .limited {
+        display: none;
+    }
+
+
+    .mas {
+        gap: 0%;
+    }
+
+
+    .work {
+        padding: 5px;
+        gap: 25px;
+        font-size: 14px;
+    }
+
+
+    .recent {
+        display: none;
+    }
+
+
+    .recentmedia {
+        display: block;
+        display: flex;
+        gap: 185px;
+    }
+
+
+    .you {
+        display: none;
+    }
+
+
+    .load {
+        padding-bottom: 100px;
+    }
+
+}
